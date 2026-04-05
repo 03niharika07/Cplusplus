@@ -36,8 +36,6 @@ int peakIndexInMountainArray(vector<int>& nums){
 
 }
 
-
-
 int main(){
     vector<int> v =  {0,1,4,6,3,2};    
 
