@@ -10,8 +10,13 @@ int main(){
 
     vector<int> marks;  // a vector is created with data type integer jiska name marks hai
 
-    vector<int> miles(10);  // a vector is created with data type integer jiska name miles hai aur initially 10 blcoks hai
+    vector<int> miles(10);  // a vector is created with data type integer jiska name miles hai aur initially 10 blcoks hai aur saare 0 se hi initialise hogye automaticaaly
 
+    for(int i : miles){
+        cout << i << " ";
+    }
+    cout << endl;
+    
     vector<int> distance(15, 0); // a vector created jiska name distance hai aur initially 15 blocks hai aur saare blocks 0 se initialize hai
 
     // accessing a vector
