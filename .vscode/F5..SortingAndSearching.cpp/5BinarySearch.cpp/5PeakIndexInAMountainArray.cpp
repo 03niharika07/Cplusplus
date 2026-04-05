@@ -28,13 +28,15 @@ int peakIndexInMountainArray(vector<int>& nums){
             // mid can be peak or non-peak element
             // store and compute
             ans = mid;
-            e = mid - 1;
+            e = mid - 1;     
         }
     }
 
     return ans;
 
 }
+
+
 
 int main(){
     vector<int> v =  {0,1,4,6,3,2};    
