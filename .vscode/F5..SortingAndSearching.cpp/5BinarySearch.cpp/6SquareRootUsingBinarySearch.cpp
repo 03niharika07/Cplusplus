@@ -2,6 +2,8 @@
 #include<vector>
 using namespace std;
 
+// SEARCH SPACE REDUCTION
+
 // bool checkMid(long long int product,int target){
 //     if(product == target){
 //         return true;

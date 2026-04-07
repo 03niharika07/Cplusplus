@@ -18,10 +18,10 @@ int binarySearch(const vector<int>& arr, int target){
         if(target == arr[mid]){
             return mid;
         }
-        else if(target > arr[mid]){
+        if(target > arr[mid]){
             s = mid + 1;
         }
-        else if(target < arr[mid]){
+        else{
             e = mid - 1;
         }
 
