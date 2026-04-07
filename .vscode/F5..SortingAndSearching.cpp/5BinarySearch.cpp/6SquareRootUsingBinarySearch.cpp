@@ -25,7 +25,7 @@ int squareRoot(int x){
         long long int product = mid * mid;
 
         //check mid or we can make a predicate function for checking mid
-        if(product == target){
+        if(product == target){       // if(checkMid(product,target))
             return mid;
         }
 
