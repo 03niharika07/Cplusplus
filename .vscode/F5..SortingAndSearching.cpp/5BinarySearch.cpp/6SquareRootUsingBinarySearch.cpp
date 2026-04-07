@@ -2,6 +2,15 @@
 #include<vector>
 using namespace std;
 
+// bool checkMid(long long int product,int target){
+//     if(product == target){
+//         return true;
+//     }
+//     else{
+//         return false;
+//     }
+// }
+
 int squareRoot(int x){
     // using binary search
     int target = x;
@@ -15,7 +24,7 @@ int squareRoot(int x){
     while(s <= e){
         long long int product = mid * mid;
 
-        //check mid
+        //check mid or we can make a predicate function for checking mid
         if(product == target){
             return mid;
         }
