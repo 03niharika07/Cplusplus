@@ -18,7 +18,7 @@ int peakIndexInMountainArray(vector<int>& nums){
     while(s <= e){
         int mid = s + (e-s)/2;
 
-        if(nums[mid] < nums[mid+1]){
+        if(nums[mid] < nums[mid+1]){               // 3 cases krdo ek Line 1 , Line 2 aur ek peak element
             // mid is on line1
             s = mid + 1;
         }
