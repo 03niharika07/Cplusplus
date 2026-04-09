@@ -11,6 +11,11 @@ int peakIndexRotatedArray(vector<int>& nums){
     while(s <= e){
         int mid = s + (e-s)/2;
 
+        // single element
+        if(s == e){
+            return mid;
+        }
+        
         // ans is on mid
         if(mid+1 < n && nums[mid] > nums[mid+1]){    /// for valid condition
             return mid;
