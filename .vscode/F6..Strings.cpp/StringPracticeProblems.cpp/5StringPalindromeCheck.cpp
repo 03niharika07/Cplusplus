@@ -3,7 +3,7 @@ using namespace std;
 
 bool checkPalindrome(string s){
     int left = 0;
-    int right = s.size() - 1;
+    int right = s.size() - 1;  // or s.length()
 
     while(left <= right){
         if(s[left] != s[right]){

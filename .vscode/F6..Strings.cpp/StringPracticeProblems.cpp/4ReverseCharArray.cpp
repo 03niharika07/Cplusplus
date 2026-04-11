@@ -1,7 +1,9 @@
 #include<iostream>
 #include<vector>
+#include<algorithm>
 using namespace std;
 
+// Approach 1
 void reverseCharArray(vector<char>& arr) {
     int s = 0;
     int e = arr.size()-1;
@@ -20,7 +22,15 @@ void reverseCharArray(vector<char>& arr) {
 int main(){
     vector<char> ch = {'n','e','h','a'};
 
-    reverseCharArray(ch);
+    // reverseCharArray(ch);
+    // cout << endl;
+
+    // Approach 2 : using inbuilt function 
+    reverse(ch.begin(),ch.end());
+    for(char i : ch){
+        cout << i << " ";
+    }
+    cout << endl;
 
 
     return 0;
