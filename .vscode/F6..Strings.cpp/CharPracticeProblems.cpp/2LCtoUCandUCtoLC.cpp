@@ -1,6 +1,16 @@
 #include<iostream>
 using namespace std;
 
+void lowerCaseToUpperCase(char ch){
+    ch = ch-'a' + 'A';
+    cout << ch << endl;
+}
+
+void upperCaseToLowerCase(char ch){
+    ch = ch- 'A' + 'a';
+    cout << ch << endl;
+}
+
 void convertLCtoUC(char arr[], int size){
     for(int i=0; i<size; i++){
         if(arr[i] >= 'a' && arr[i] <= 'z'){
