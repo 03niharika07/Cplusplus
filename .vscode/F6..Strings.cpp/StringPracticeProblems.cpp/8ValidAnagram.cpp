@@ -34,6 +34,8 @@ bool isAnagram(const string& s, const string& t){
 bool isAnagramcheck(const string& s, const string& t){
     unordered_map<char, int> count;
 
+    if(s.length() != t.length()) return false;
+
     for(int i=0; i<s.length(); i++){
         char ch = s[i];
         // count ek unordered_map hai, jo ek dictionary ki tarah hota hai.
