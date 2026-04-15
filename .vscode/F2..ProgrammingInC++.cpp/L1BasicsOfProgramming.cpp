@@ -58,7 +58,84 @@ int main(){
     cout << "Area : " << area << endl;
 
     cout << endl;
+
+    // 5. CALCULATE PERCENTAGE
+    // Flowchart : start (terminator) -> read sub1,sub2,sub3,sub4 (input/output) -> add=sub1+sub2+sub3+sub4 (process) -> total = 400 (process) -> percentage = (add/total)*100 (process) -> print percentage (input/output) -> end (oval)
      
+    float sub1,sub2,sub3,sub4;
+    cout << "Enter marks : " << endl;
+    cin >> sub1;
+    cin >> sub2;
+    cin >> sub3;
+    cin >> sub4;
+
+    float add = sub1 + sub2 + sub3 + sub4;
+    float total = 400;
+    float percentage = (add/total)*100;
+    cout << "Percentage : " << percentage << endl;
+
+    cout << endl;
+
+    // 6. CHECK POSITIVE,NEGATIVE OR ZERO
+    // Flowchart : start (terminator) -> read num (input/output) -> is num ==0 ? (decision box-diamond)
+    // if yes, print Zero (input/output) -> end (terminator)
+    // if no, is num >0 ? (decision box - diamond)
+    // if yes, print positive (input/output) -> end (terminator)
+    // if no, print negative (input/output) -> end (terminator)
+
+    int n;
+    cout << "Enter a no. : " << endl;
+    cin >> n;
+
+    if(n == 0){
+        cout << "Zero" << endl;
+    }
+    else if(n > 0){
+        cout << "Positive" << endl;
+    }
+    else{
+        cout << "Negative" << endl;
+    }
+
+    cout << endl;
+
+    // 7. CALCULATE PERCENTAGE 2
+    // Flowchart : start (terminator) -> read s1,s2,s3,s4,s5 (input/output) -> sum=s1+s2+s3+s4+s5 (process) -> total=500 (process) -> percentage=(sum/total)*100 (process) -> print percentage (input/output) -> is percentage > 90 (decision - diamond)
+    // if yes, print grade A -> end
+    // if no, is percentage >80 and <90 ?
+    // if yes, print grade B -> end
+    // if no, is percentage >70 and <80 ?
+    // if yes, print grade C -> end
+    // if no, print fail -> end
+
+    float s1,s2,s3,s4,s5;
+    cout << "Enter marks of 5 subjects : " << endl;
+    cin >> s1;
+    cin >> s2;
+    cin >> s3;
+    cin >> s4;
+    cin >> s5;
+
+    float sum2 = s1+s2+s3+s4+s5;
+    float total2 = 500;
+
+    float percentage2 = (sum2/total2)*100;
+    cout << "Percentage : " << percentage2 << endl;
+
+    if(percentage2 > 90){
+        cout << "Grade : A" << endl;
+    }
+    else if(percentage2 >80 && percentage2 <90){
+        cout << "Grade : B" << endl;
+    }
+    else if(percentage2 >70 && percentage2 <80){
+        cout << "Grade : C" << endl;
+    } 
+    else{
+        cout << "Fail" << endl;
+    }
+
+    cout << endl;
 
 
     return 0;
