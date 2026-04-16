@@ -41,6 +41,8 @@ int main(){
 
     // definition/ initialization
     int a = 5;
+    float b = 4.13;
+    char grade = '+';
 
 }
 
