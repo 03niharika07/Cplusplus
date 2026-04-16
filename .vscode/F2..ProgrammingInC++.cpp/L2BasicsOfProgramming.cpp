@@ -44,5 +44,14 @@ int main(){
     float b = 4.13;
     char grade = '+';
 
+    // OPERATORS
+
+    // 1. Arithmetic : +,-,*,/,%,++,--
+    // 2. Relational : ==, !=, >, <, >=, <=
+    // 3. Assignment : =
+    // 4. Logical : &&, ||, !
+    // 5. Bitwise : &, |, ~, >>, <<
+    
+
 }
 
