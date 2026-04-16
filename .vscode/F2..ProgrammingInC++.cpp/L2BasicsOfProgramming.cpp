@@ -1,11 +1,46 @@
-// First C++ Program 
+// // FIRST C++ PROGRAM
 
-#include<iostream> // preprocessor directive
+// #include<iostream>  // #include - preprocessor directive, iostream - file
+// using namespace std;
+
+// // operating system (OS) main function ko call krta h
+// int main(){        // starting point of program
+// // int - return_type 
+// // main() - function
+// // {} - scope/ body of function
+
+//     return 0;      // successful execution
+// // ; - termination
+// }
+
+
+// INPUT/OUTPUT IN C++
+
+#include<iostream>
 using namespace std;
 
-int main(){        // starting point of program
-// int - return_type, main() - function
+int main(){
+    // output
+    cout << "Niharika" << endl;
+    cout << 5 << endl;
+    cout << "5" << endl;
+    cout << (2+3) << endl;
+    cout << "2+3" << endl;
 
-// operating system (OS) main function ko call krta h
-    return 0;      // successful execution
+    cout << endl;
+
+    // input 
+    int n;
+    cin >> n;
+    cout << n;
+
+    // VARIABLES : Variables are containers for storing data values.
+
+    // declaration
+    int age;
+
+    // definition/ initialization
+    int a = 5;
+
 }
+
