@@ -44,14 +44,14 @@ int main(){
     float b = 4.13;
     char grade = '+';
 
-    // OPERATORS
+    // OPERATORS : Operators are used to perform operations on variables and values
 
     // 1. Arithmetic : +,-,*,/,%,++,--
     // 2. Relational : ==, !=, >, <, >=, <=
     // 3. Assignment : =
     // 4. Logical : &&, ||, !
     // 5. Bitwise : &, |, ~, >>, <<
-    
+
 
 }
 
