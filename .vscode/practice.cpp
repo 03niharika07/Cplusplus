@@ -29,10 +29,10 @@ using namespace std;
 //     }
 // }
 
-// int main(){
-//     int num = 12;
-//     int result = ~(num);
-//     cout << result << endl;
-// }
+int main(){
+    int num = 12;
+    int result = ~(num);
+    cout << result << endl;
+}
 
 
