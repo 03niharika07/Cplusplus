@@ -1,0 +1,90 @@
+#include<iostream>
+using namespace std;
+#include<string>
+
+class Student{
+public:
+    // ctor - constructor (default)
+    Student(){
+        cout << "Student default ctor called" << endl;
+    }
+
+    // ctor - Parameterised ctor
+    Student(int id, int age, string name, int nos){
+        cout << "Student Parameterised ctor called" << endl;
+        this->id = id;
+        this->age = age;
+        this->name = name;
+        this->nos = nos;
+    }
+
+    // copy ctor 
+    Student(const Student &srcobj){                     // srcobj => A
+        cout << "Student copy ctor called" << endl;
+        this->id = srcobj.id;                                  // this => C
+        this->age = srcobj.age;
+        this->name = srcobj.name;
+        this->nos = srcobj.nos;
+    }
+
+    // Attributes/properties
+    int id;
+    int age;
+    string name;
+    int nos;  //number of subjects
+
+    // Behaviour/Methods/Functions
+    void study(){
+        cout << this->name << " Studying" << endl;
+    }
+
+    void sleep(){
+        cout << this->name << " Sleeping" << endl;
+    }
+
+    void bunk(){
+        cout << this->name << " Bunking" << endl;
+    }    
+
+    // dtor - destructor
+    ~Student(){
+        cout << "Student default dtor called" << endl;
+    }
+};
+
+// this keyword - points to the current object, refers to the current object of a class
+
+int main(){
+    // 1. Default ctor
+
+    // create hua fir destroy hogya
+    // Student A;
+    // A.id = 1;
+    // A.age = 13;
+    // A.name = "Neha";
+    // A.nos = 6;
+
+    // A.study();
+
+    // Parameterised ctor
+
+    // Student A(1,15,"Neha",6);
+    // Student B(2,34,"Namrita",7);
+
+    // A.bunk();
+    // B.sleep();
+
+    // cout << A.name << " " << A.age << endl;
+
+    // Copy ctor
+    Student A(1,15,"Neha",6);
+    Student C = A; // or Student C(A);
+
+    cout << C.name << " " << A.name << endl;
+
+
+
+
+
+    return 0;
+}
