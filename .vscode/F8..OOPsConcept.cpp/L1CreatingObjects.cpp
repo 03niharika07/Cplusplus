@@ -76,14 +76,18 @@ int main(){
 
     // cout << A.name << " " << A.age << endl;
 
-    // Copy ctor
-    Student A(1,15,"Neha",6);
-    Student C = A; // or Student C(A);
+    // // Copy ctor
+    // Student A(1,15,"Neha",6);    // ye stack m define hua hoga
+    // Student C = A; // or Student C(A);
 
-    cout << C.name << " " << A.name << endl;
+    // cout << C.name << " " << A.name << endl;
 
-
-
+    // Dynamic memory allocation krne k liye ya student pointer 
+    Student *A = new Student(1,23,"Neha",4);
+    cout << A->name << " " << A->age << endl;
+    A->study(); 
+    // dynamic m khud se destructor call nhi hota hume krna pdega
+    delete A;
 
 
     return 0;
