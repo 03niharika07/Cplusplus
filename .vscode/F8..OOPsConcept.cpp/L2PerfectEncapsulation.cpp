@@ -34,7 +34,7 @@ public :
 
     // For age
     int getAge() const{
-        return age;
+        return this->age;
     }
 
     // For id
