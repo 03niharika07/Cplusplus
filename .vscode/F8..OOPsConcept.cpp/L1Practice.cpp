@@ -79,14 +79,14 @@ int main(){
     // Car E(D);
     // cout << E.color << " " << D.color << endl;
 
-    // dynamic memory allocator or car pointer 
-    Car *C = new Car(20,"Grey","Porsche");
-    cout << C->color << " " << C->brand << endl;
-    C->start();
-    C->accelerate();
-    C->stop();
-    // khud se delete krn apdega
-    delete C;
+    // // dynamic memory allocator or car pointer 
+    // Car *C = new Car(20,"Grey","Porsche");
+    // cout << C->color << " " << C->brand << endl;
+    // C->start();
+    // C->accelerate();
+    // C->stop();
+    // // khud se delete krn apdega
+    // delete C;
 
 
 
