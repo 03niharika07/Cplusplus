@@ -14,7 +14,7 @@ public:
 private:
     // attribute
     string gfName;
-    int *gpa;
+    float *gpa;
 
 public:
     // ctor - Default ctor
@@ -28,7 +28,7 @@ public:
         this->age = age;
         this->name = name;
         this->nos = nos;
-        this->gpa = new int(gpa);
+        this->gpa = new float(gpa);
         this->gfName = gfName;
     }
 
@@ -67,3 +67,6 @@ int main(){
     
     return 0;
 }
+
+// Perfect Encapsulation : saare attributes hidden hojae , sbko private m daal dia
+// But fir communication kse hoga
