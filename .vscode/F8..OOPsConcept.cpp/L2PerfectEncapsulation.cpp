@@ -21,6 +21,9 @@ private:
 public :
 
     // Getter setter
+    // kisi fucntion k through access krre hai
+
+    // For gpa
     void setGpa(float a){
         *this->gpa = a;
     }
@@ -29,8 +32,27 @@ public :
         return *this->gpa;
     }
 
+    // For age
     int getAge() const{
-        return this->age;
+        return age;
+    }
+
+    // For id
+    void setId(int a){
+        this->id = a;
+    }
+
+    int getId() const{
+        return this->id;
+    }
+
+    // For name
+    void setName(string a){
+        this->name = a;
+    }
+
+    string getName() const{
+        return this->name;
     }
 
     // Default ctor
@@ -81,6 +103,11 @@ int main(){
     A.setGpa(9.8);
     cout << A.getGpa() << endl;
 
+    cout <<A.getName() << endl;
+    A.setName("Sambhav");
+    cout << A.getName() << endl;
+
+    cout << A.getId() << endl;
 
     return 0;
 }
