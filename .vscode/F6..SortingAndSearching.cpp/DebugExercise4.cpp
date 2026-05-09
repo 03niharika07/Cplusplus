@@ -19,15 +19,15 @@
 // Ans1.
 
 #include<iostream>
-#include<vector>
 using namespace std;
+#include<vector>
 
 int search(vector<int>& nums, int target) {
 		int l = 0, r = nums.size() - 1;
 		while(l <= r){
 			int mid = l + (r-l)/2;
 			if(nums[mid] == target) return mid;
-			else if(nums[l]<=nums[mid]){ 
+			else if(nums[l]>=nums[mid]){
 				if(nums[l]<=target && target<nums[mid]) r = mid-1;
 				else l = mid+1;
 			}
@@ -38,14 +38,6 @@ int search(vector<int>& nums, int target) {
 		}
 		return -1; // No need to debug this line.
 	}
-
-int main(){
-    vector<int> v = {1,2,3,4,5};
-    
-    int ans = search(v,4);
-    cout << ans << endl;
-
-}
 
 
 
