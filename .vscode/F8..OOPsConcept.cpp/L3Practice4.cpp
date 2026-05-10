@@ -2,7 +2,7 @@
 using namespace std;
 #include<string>
 
-// base calss k attribute ko protected bna dia, accessible hoga child class m but ab access specifier ko bhi protected krdia
+// base class k attribute ko protected bna dia, accessible hoga child class m but ab access specifier ko bhi protected krdia
 // protected lenge access specifier toh fir saara data child class ka protected bn jaega
 class Animal{
 protected:
@@ -49,6 +49,11 @@ public:
     void bark(){
         cout << name << " Barking" << endl;   // name is private , will show error, need to use getter setter
     }
+
+    // default dtor
+    ~Dog(){
+        cout << "Dog default dtor called" << endl;
+    }
 };
 
 
@@ -60,6 +65,6 @@ int main(){
 
     cout << A.noOfLegs << endl;
     A.bark();
-    
+
     return 0;
 }
