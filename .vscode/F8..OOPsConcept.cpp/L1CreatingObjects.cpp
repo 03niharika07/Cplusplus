@@ -4,6 +4,7 @@ using namespace std;
 
 class Student{
 public:
+    // CONSTRUCTOR HMESHA PUBLIC M LIKHA JATA H , PUBLIC HOTA H
     // ctor - constructor (default)
     Student(){
         cout << "Student default ctor called" << endl;
