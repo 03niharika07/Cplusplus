@@ -17,16 +17,16 @@ public:
 
     // methods
     void sleep(){
-        cout << name << "Sleeping" << endl;
+        cout << name << " Sleeping" << endl;
     }
 
     void eat(){
-        cout << name << "Eating" << endl;
+        cout << name << " Eating" << endl;
     }
 
     // Default dtor
     ~Animal(){
-        cout << "Animal Default dtor called" << endl; 
+        cout << "I am inside animal dtor" << endl; 
     }
 };
 
@@ -43,7 +43,7 @@ public:
 
     // methods 
     void bark(){
-        cout << name << "Barking" << endl;
+        cout << name << " Barking" << endl;
     }
 };
 
