@@ -2,7 +2,7 @@
 using namespace std;
 #include<string>
 
-// MULTILEVEL INHERITANCE
+// HIERARCHICAL INHERITANCE
 
 class Vehicle{       // BASE CLASS
 public:
