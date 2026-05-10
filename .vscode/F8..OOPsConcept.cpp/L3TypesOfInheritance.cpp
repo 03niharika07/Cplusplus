@@ -10,9 +10,14 @@ protected:
     int employeeId;
 
 public:
+    // name(empName), employeeId(empId)
+    // This is called a constructor initializer list.
+    // It initializes the class variables.
+
     Employee(const string &empName, int empId) : name(empName), employeeId(empId)
     {
         // cout << __FUNCTION__ << endl;
+        // __FUNCTION__ is used for debugging to know which function is running.
     }
 
     void display() const
