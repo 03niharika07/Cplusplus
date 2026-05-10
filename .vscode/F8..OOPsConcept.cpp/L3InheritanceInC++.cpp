@@ -29,7 +29,7 @@ public:
 
     // DEfault dtor
     ~Vehicle(){
-        cout << "Vehicle Default dtor called" << endl;
+        cout << "I am inside vehicle dtor" << endl;
     }
 };
 
@@ -51,6 +51,11 @@ public:
     void startAC(){
         cout << this->name << "AC started" << endl;
     }
+
+    // Default dtor
+    ~Car(){
+        cout << "I am inside car dtor" << endl;
+    }
 };
 
 class Bike : public Vehicle{
@@ -71,11 +76,42 @@ public:
     void wheeling(){
         cout << this->name << "Wheeling" << endl;
     }
+
+    // Default dtor
+    ~Bike(){
+        cout << "I am inside Bike dtor" << endl;
+    }
 };
 
 int main(){
     Car A("Porsche","P11",4,4,"Manual");
     cout << A.name << endl;
+    A.start_engine();
+    A.stop_engine();
+    A.startAC();
+
+    Bike B("Royal Enfield","R182",2,"Gripped","XYZ");
+    B.start_engine();
+    B.wheeling();
+    B.stop_engine();
 
     return 0;
 }
+
+// OUTPUT
+
+// I am inside vehicle ctor        // Base class ka constructor call hoga phle
+// I am inside Car ctor            // fir derived class ka constructor call hoga
+// Porsche
+// PorscheStarted
+// PorscheStopped
+// PorscheAC started
+// I am inside vehicle ctor        // Nayi derived class bnri, firse phle base calss ka constructor call hoga
+// I am inside bike ctor           // fir derived class ka constructor call hoga
+// Royal EnfieldStarted
+// Royal EnfieldWheeling
+// Royal EnfieldStopped
+// I am inside Bike dtor           // Derived class ka dtor phle call hoga
+// I am inside vehicle dtor
+// I am inside car dtor
+// I am inside vehicle dtor

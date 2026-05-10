@@ -10,7 +10,7 @@ public:
 
     //ctor
     Animal(string n,string c){
-        cout << "I am inside Animal Class" << endl;
+        cout << "Animal Parameterised ctor called" << endl;
         this->name = n;
         this->color = c;
     }
@@ -26,7 +26,7 @@ public:
 
     // Default dtor
     ~Animal(){
-        cout << "I am inside animal dtor" << endl; 
+        cout << "Animal Default dtor called" << endl; 
     }
 };
 
@@ -37,13 +37,18 @@ public:
 
     // ctor
     Dog(string name,string color,int noOfLegs) : Animal(name,color){
-        cout << "I am inside Dog class" << endl;
+        cout << "Dog Parameterised ctor called" << endl;
         this->noOfLegs = noOfLegs;
     }
 
     // methods 
     void bark(){
         cout << name << " Barking" << endl;
+    }
+
+    // Default dtor
+    ~Dog(){
+        cout << "Dog Default dtor called" << endl;
     }
 };
 
@@ -60,3 +65,15 @@ int main(){
     return 0;
 
 }
+
+// OUTPUT 
+
+// Animal Parameterised ctor called
+// Dog Parameterised ctor called
+// Chiku
+// Chiku Barking
+// Chiku Sleeping
+// Chiku Eating
+// Black
+// Dog Default dtor called
+// Animal Default dtor called
