@@ -33,7 +33,7 @@ public:
 
     // Default dtor
     ~Animal(){
-        cout << "Animal Default dtor called" << endl; 
+        cout << "I am inside Animal dtor" << endl; 
     }
 };
 
@@ -52,6 +52,11 @@ public:
     void bark(){
         cout << getName() << " Barking" << endl;   // name is private , will show error, need to use getter setter
     }
+
+    // Default dtor
+    ~Dog(){
+        cout << "I am inside Dog dtor" << endl;
+    }
 };
 
 
@@ -60,3 +65,11 @@ int main(){
     cout << A.color << endl;
     return 0;
 }
+
+// OUTPUT 
+
+// I am inside Animal Class
+// I am inside Dog class
+// Black
+// I am inside Dog dtor
+// I am inside Animal dtor

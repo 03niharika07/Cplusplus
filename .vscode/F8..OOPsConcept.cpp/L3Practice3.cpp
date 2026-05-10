@@ -48,6 +48,11 @@ public:
     void bark(){
         cout << name << " Barking" << endl;   // name is private , will show error, need to use getter setter
     }
+
+    // default dtor
+    ~Dog(){
+        cout << "Dog default dtor called" << endl;
+    }
 };
 
 
@@ -60,3 +65,13 @@ int main(){
 
     return 0;
 }
+
+// OUTPUT 
+
+// I am inside Animal Class
+// I am inside Dog class
+// Black
+// I am inside Animal Class          // ctor call hua kyuki main m animal se object bnaaya
+// Animal Default dtor called
+// Dog default dtor called
+// Animal Default dtor called
