@@ -2,7 +2,7 @@
 using namespace std;
 #include<string>
 
-// Base class k ek variable ko protected bna dia , child class m accessbile hoga , access specifier public h
+// Base class k ek variable ko protected bna dia , child class m accessbile hoga , access specifier public h, mtlb publically inherit krre
 class Animal{
 protected:
     string name;
@@ -52,7 +52,11 @@ public:
 
 
 int main(){
-    Dog A ("Chiku","Black",4);
-    cout << A.color << endl;
+    Dog D ("Chiku","Black",4);
+    cout << D.color << endl;
+    // cout << D.name << endl; // Not accessible
+    Animal A("Dog","White");
+    // cout << A.name << endl;  // name will not be accessible because it is protected 
+
     return 0;
 }
