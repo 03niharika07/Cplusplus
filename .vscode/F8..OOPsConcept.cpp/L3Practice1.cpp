@@ -2,6 +2,9 @@
 #include<string>
 using namespace std;
 
+// UNDERSTANDING MODE OF INHERITANCE 
+// SINGLE LEVEL INHERITANCE
+
 class Animal{
 public:
     // Attributes

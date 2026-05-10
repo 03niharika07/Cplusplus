@@ -2,6 +2,8 @@
 using namespace std;
 #include<string>
 
+// MULTILEVEL INHERITANCE
+
 class Vehicle{       // BASE CLASS
 public:
 

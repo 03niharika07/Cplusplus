@@ -2,6 +2,8 @@
 using namespace std;
 #include<string>
 
+// UNDERSTANDING MODE OF INHERITANCE
+
 // Base class k ek variable ko protected bna dia , child class m accessbile hoga , access specifier public h, mtlb publically inherit krre
 class Animal{
 protected:

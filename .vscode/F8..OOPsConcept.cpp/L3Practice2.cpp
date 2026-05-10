@@ -2,6 +2,8 @@
 #include<string> 
 using namespace std;
 
+// UNDERSTANDING MODE OF INHERITANCE
+
 // Base class m ek attribute ko private bna dia , child class m usko inherit krne k liye getter setter ka use krenge
 class Animal{
 private:

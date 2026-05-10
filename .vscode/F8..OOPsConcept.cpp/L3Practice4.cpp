@@ -2,6 +2,8 @@
 using namespace std;
 #include<string>
 
+// UNDERSTANDING MODE OF INHERITANCE
+
 // base class k attribute ko protected bna dia, accessible hoga child class m but ab access specifier ko bhi protected krdia
 // protected lenge access specifier toh fir saara data child class ka protected bn jaega
 class Animal{
