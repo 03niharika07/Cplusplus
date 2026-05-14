@@ -87,7 +87,7 @@ class Complex{
     //     return<>
     // }
 
-    Complex operator + (const Complex &B){
+    Complex operator + (const Complex &B){         // A.fun(B)
         // this -> A instance
         Complex temp;
         temp.real = this->real + B.real;
