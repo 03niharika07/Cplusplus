@@ -2,6 +2,7 @@
 using namespace std;
 #include<vector>
 
+// COMPILE TIME POLYMORPHISM (STATIC)
 // METHOD OVERLOADING : Overloading occurs when a class contains multiple methods sharing a name but differing in argument count or argument type.
 
 // 1. FUNCTION OVERLOADING
@@ -102,10 +103,7 @@ class Complex{
     }
 
     bool operator == (const Complex &B){
-        if(this->real == B.real && this->imag == B.imag){
-            return true;
-        }
-        return false;
+        return (this->real == B.real) && (this->imag == B.imag) ;
     }
  
 };
@@ -142,8 +140,8 @@ int main(){
     D.print();
 
     // 2 complex no.s are equal
-    bool E = c1 == c2;
-    cout << E << endl;
+    bool ans = c1 == c2;
+    cout << ans << endl;
 
     return 0;
 }
